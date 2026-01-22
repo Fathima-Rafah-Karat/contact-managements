@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import { DB_URI, NODE_ENV } from "../config/env.js";
 
-// if (!DB_URI) {
-//   throw new Error("Please define the MONGODB_URI");
-// }
+if (!DB_URI) {
+  throw new Error("Please define the MONGODB_URI");
+}
 
 const connectToDatabase = async () => {
   try {
